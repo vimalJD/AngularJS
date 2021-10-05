@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head><title>MY PRODUCT</title>
+<style>
+div{
+     background-color:pink;
+	
+}
+
+h1{
+      color:red;
+}
+table
+{
+  color:blue;
+}
+</style>
+</head>
+<body>
+<h1>PRODUCT  PORTAL</h1>
+<div id="myform">
+<form name="myform1">
+<table>
+<tr>
+<br><br>
+<td>Name:</td>
+<td> <input type="text" id="name"></td>
+</tr>
+
+<tr>
+<td>Description:</td>
+<td> <input type="text" id="description"></td>
+</tr>
+<tr>
+<td>category:</td>
+<td> <input type="text" id="category"></td>
+</tr>
+<tr>
+<td>price:</td>
+<td> <input type="text" id="price" ></td><td><br></td>
+
+</tr>
+
+
+
+</table>
+
+<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<input type="button" id="add" value="Add" onclick="addRow('myTableData')"/>&nbsp;&nbsp;
+<button type="reset" value="reset" onclick="reset('myTableData')"/>reset<br>
+</form>
+</div>
+<div id="mydata">
+<table id="myTableData" border="1" cellpadding="2">
+<tr>
+
+<td><b>Name</b></td>
+<td><b>Description</b></td>
+<td><b>Category</b></td>
+<td><b>Price</b></td>
+<td>&nbsp;</td>
+</tr>
+</table>
+&nbsp;<br/>
+</div>
+
+
+ <script src="app.js";></script>
+</body>
+
+
+
+</html>

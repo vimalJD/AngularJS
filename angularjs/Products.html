@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html ng-app="">
+<head>
+   <title>Directives App</title>
+   <script src="angular.js"></script>
+</head>
+   <body>
+       <div ng-init="products=[{name: 'Mobile', description:'Samsung Model', category:'Electronic Device', price:'25000' },
+	                            {name: 'Freeze', description:'LG Model', category:'Electronic Device', price:'30000'},
+	                            {name: 'TV', description:'Samsung Model', category:'Electronic Device', price:'19000'},
+								{name: 'Laptop', description:'Dell Model', category:'Electronic Device', price:'27000'}
+							]">
+							<p>
+							List of Products :
+							</p>
+							<table border="1">
+							,<thead>
+							<th>Name</th>
+							<th>Description</th>
+							<th>Category</th>
+							<th>Price</th>
+							
+							</thead>
+							    
+								 
+								 
+							
+								 <tr ng-repeat="product in products">
+		
+								 <td>
+								{{product.name}}
+								 </td>
+								 
+								 <td>
+								{{product.description}}
+								 </td>
+								 
+								 <td>
+								{{product.category}}
+								 </td>
+								 
+								 <td>
+								{{product.price}}
+								 </td>
+								 </tr>
+								 
+								 </table>
+							
+								
+								
+ 
+
+
+          </div>
+   </body>
+</html>

@@ -1,0 +1,9 @@
+angular.module("MyApp",[])
+.controller("stdCtrl",function($scope){
+	$scope.reset=function(){
+		$scope.fname="";
+	    $scope.lname="";
+	    $scope.email="";
+	}
+	$scope.reset();
+});

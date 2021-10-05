@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html ng-app="">
+<head>
+   <title>Directives App</title>
+   <script src="angular.js"></script>
+</head>
+   <body>
+       <div ng-init="countries=[{locale: 'en-US', name:'United States'},
+	                            {locale: 'en-GB', name:'United Kingdom'},
+	                            {locale: 'en-FR', name:'France'}
+							]">
+							<p>
+							List of Countries with locale :
+							</p>
+							<ol>
+							    <li ng-repeat="country in countries">
+								 {{'country: ' +country.name+ ',Locale: ' +country.locale}}
+								 
+							     </li>
+							</ol>
+								
+								
+ 
+
+
+          </div>
+   </body>
+</html>

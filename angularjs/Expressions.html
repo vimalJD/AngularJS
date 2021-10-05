@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html ng-app="">
+<head>
+   <title>Expressions App</title>
+   <script src="angular.js"></script>
+   <script src="myscript.js"></script>
+</head>
+   <body>
+       <div ng-init="qty=3;cost=34;student={fname: 'Rutuja',lname: 'Kulkarni',RollNo:63};marks=[89,99,96,98,97]" >
+        <p>
+		   Hello {{student.fname + ' ' + student.lname}}
+		</p> 
+		
+		
+		<p>
+		   Expenses: {{qty*cost}}
+		</p>
+         
+		<p>
+		   Roll No: {{student.RollNo}}
+	    </p>
+		
+		<p>
+		   Marks: {{marks[1]}}
+	    </p>
+
+          </div>
+   </body>
+</html>

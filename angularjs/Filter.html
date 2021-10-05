@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html ng-app="stdApp">
+<head>
+    <title>Filters App</title>
+	<Script src="angular.js"></Script>
+	<Script src="stdCtrl.js"></Script>
+	</head>
+	<body>
+		<div ng-controller="stdCtrl">
+			<table border="1">
+				
+				<tr>
+					<td>
+						Enter first name:
+					</td>
+					<td>
+						<input type="text" ng-model="student.firstName" />
+					</td>
+				</tr>
+			
+				
+				<tr>
+					<td>
+						Enter last name:
+					</td>
+					<td>
+						<input type="text" ng-model="student.lastName" />
+					</td>
+				</tr>
+				
+				
+				
+				<tr>
+					<td>
+						Enter fees:
+					</td>
+					<td>
+						<input type="text" ng-model="student.fees" />
+					</td>
+				</tr>
+				
+				
+				<tr>
+					<td>
+						Enter subject:
+					</td>
+					<td>
+						<input type="text" ng-model="subjectName" />
+					</td>
+				</tr>
+			
+			</table>
+			<br />
+			
+			
+			<table border="1">
+				<tr>
+					<td>
+					
+						Name in UpperCase:
+					
+					</td>
+					
+					<td>
+						{{student.fullName() | uppercase}}
+					
+					</td>
+			
+				</tr>
+			
+			
+			
+				<tr>
+					<td>
+					
+						Name in LowerCase:
+					
+					</td>
+					
+					<td>
+						{{student.fullName() | lowercase}}
+					
+					</td>
+				
+				</tr>
+				
+				
+				<tr>
+					<td>
+					
+						Fees:
+					
+					</td>
+					
+					<td>
+						{{student.fees | currency}}
+					
+					
+					
+					</td>
+				
+				</tr>
+				
+				<tr>
+					<td>
+						Subject:
+					
+					</td>
+					
+					<td>
+						<ul>
+							<li ng-repeat="subject in student.subjects | filter: subjectName | orderBy: 'marks'">
+								{{subject.name + ', marks: ' + subject.marks}}
+							</li>
+						</ul>
+					
+					</td>
+				
+				
+				
+				
+				
+				
+				</tr>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			</table>
+			
+   
+		</div>
+	</body>
+</html>

@@ -1,0 +1,19 @@
+AngularJS and nodejs package are under same directory,
+respectively AngularJS contains user created and pre-define files.
+
+1) Components
+2) Controllers
+3) Filters
+4) ngModules
+5) Views
+and other bootstrap and javascript files,
+
+and nodejs, Which contains 
+
+-> node_modules
+-> nmp
+-> nmx
+-> package-lock.json
+-> server.js file
+
+and many more accoring to requirement.

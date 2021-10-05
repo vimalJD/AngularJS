@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html ng-app="myApp1">
+<head>
+    <title>First Angular Js App</title>
+	<Script src="angular.js"></Script>
+	<Script src="myApp1.js"></Script>
+</head>
+<body>
+	<div ng-controller="myCtrl1">
+	    Enter name: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<input type="text" ng-model="products.name" />
+			<br />
+			<br />
+		Enter description: <input type="text" ng-model="products.description" />
+			<br />
+			<br />
+		Enter category:&nbsp; &nbsp;  <input type="text" ng-model="products.category" />
+			<br />
+			<br />
+		Enter price: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<input type="text" ng-model="products.price" /> 
+		   
+		<br />
+		<br />
+		Your product info is: {{products.getproductinfo()}}
+	</div>
+
+</body>
+</html>

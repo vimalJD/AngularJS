@@ -1,0 +1,88 @@
+ <!DOCTYPE html>
+ <html>
+		<head>
+			<title>SEED 216</title>
+			<link href="myStyles.css" rel="styleSheet" />
+			<style>
+				label{
+				text-align:right;
+				width:90px;
+				float:left;
+				}
+				input{
+				margin-top:0px;
+				padding-top:0px;
+				}
+				fieldset{
+				margin-top:5px;
+				}
+				#confidenceDisplay {
+				vertical-align:top;
+				}
+			</style>
+		</head>
+		<body>
+			<div id="container">
+				<header>
+					<h1>SEED 216</h1>
+					<h3 align="center">3Days,216km, One crazy Runner's High</h3>
+					<h2>&nbsp;</h2>
+					<h4>Live Results Now!</h4>
+				</header>
+				<nav> 
+					<h2> Links</h2>
+					<a href="index.html" title="Home">Home</a>
+					<a href="signup.html" title="Are you crazy enough">Sign up</a>
+					<a href="about.html" title="Learn more about SEED 216">About the Race</a>
+				</nav>
+				<section>
+					<article>
+						<h2>Sign Up Today</h2>
+							<p>
+								<strong>Race Fee</strong>:Rs.1000
+							</p>
+						 <form name="rehister">
+							<p> 
+								<label for="rName">Runner: </label>
+								<input id="rName" name="rName" type="text"
+								placeholder="First and last name" required/>
+							</p>
+							
+							<p> 
+								<label for="phone">Tel #: </label>
+								<input id="phone" name="phone" type="tel"
+								placeholder="(xxx)-xxx-xxx" />
+							</p>
+							
+							<p> 
+								<label for="email">Email :</label>
+								<input id="email" name="email" type="email"
+								placeholder="For confirmation only" />
+							</p>
+							
+							<p> 
+								<label for="dob">DOB :</label>
+								<input id="dob" name="dob" type="date"
+								placeholder="MM/DD/YYYY"/>
+							</p>
+							<fieldset>
+								<legend>Expectations:</legend>
+								<p>
+									<label for="confidence">confidence</label>
+									<input id="confidence" name="level" type="range" 
+									onchange="confidenceDisplay.value=(value +'%')
+									min="10" max="100" step="10" value="35"/>
+								</p>
+								
+								
+							</fieldset>
+								<p>
+									<input type="submit" name="register" value="Register"/> 
+								</p>
+		
+						 </form>
+					</article>
+				</section>
+		    </div>
+		</body>
+ </html>
